@@ -1,10 +1,10 @@
-# 🌿 Vitalis — Personalized Wellness Web Application
+#  Vitalis — Personalized Wellness Web Application
 
 A production-grade full-stack wellness tracking application with fitness, nutrition, and mental health monitoring. Built with **FastAPI + React**, powered by **MongoDB**, ready for AI integration.
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 wellness-app/
@@ -68,7 +68,7 @@ wellness-app/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -262,7 +262,7 @@ curl -X POST http://localhost:8000/mood/log \
 
 ---
 
-## 🧠 MongoDB Collections
+##  MongoDB Collections
 
 ### users
 ```json
@@ -347,7 +347,7 @@ The AI endpoints at `/ai/recommend-workout`, `/ai/nutrition-advice`, and `/ai/me
 
 ---
 
-## 📊 Analytics Logic
+##  Analytics Logic
 
 ### Wellness Score (0-100)
 - **Fitness Score (35%)**: frequency, duration, variety
@@ -362,5 +362,5 @@ Uses MET (Metabolic Equivalent) values per workout type × weight × duration ×
 
 ---
 
-## 🌙 Dark/Light Mode
+##  Dark/Light Mode
 Click the moon/sun icon in the sidebar. Preference is persisted in localStorage.
