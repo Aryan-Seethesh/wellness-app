@@ -134,7 +134,7 @@ mongod --dbpath /data/db
 
 ---
 
-## ⚙️ Environment Variables
+##  Environment Variables
 
 ```env
 MONGODB_URL=mongodb://localhost:27017
@@ -151,7 +151,7 @@ AI_API_ENDPOINT=https://api.openai.com/v1/chat/completions
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Authentication
 | Method | Endpoint | Description |
