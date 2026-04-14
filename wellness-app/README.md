@@ -2,6 +2,23 @@
 
 A production-grade full-stack wellness tracking application with fitness, nutrition, and mental health monitoring. Built with **FastAPI + React**, powered by **MongoDB**, ready for AI integration.
 
+## 📖 Overview
+Vitalis provides a unified platform for managing fitness, nutrition, and mental health in one application. It collects user data, processes it using backend services, and provides personalized insights and analytics.
+
+---
+
+## 🏗️ System Architecture (Detailed Explanation)
+
+The application follows a 3-tier architecture:
+
+- Frontend (React + Vite): Handles UI and sends API requests using Axios  
+- Backend (FastAPI): Processes logic and manages APIs  
+- Database (MongoDB): Stores user data  
+
+### Data Flow
+User → Frontend → Axios → FastAPI → MongoDB  
+Backend → Processes Data → Returns Response → Frontend UI  
+
 ---
 
 ##  Project Structure
@@ -197,6 +214,50 @@ AI_API_ENDPOINT=https://api.openai.com/v1/chat/completions
 | POST | `/ai/mental-health-support` | AI mental wellness support |
 
 ---
+API Endpoints
+Authentication
+Method Endpoint Description
+## 🔗 APIs & Integrations (Detailed)
+
+### Authentication (`/auth`)
+- POST /auth/register
+- POST /auth/login
+- GET /auth/me
+- PUT /auth/me
+
+### Fitness (`/fitness`)
+- POST /fitness/log
+- GET /fitness/history
+- GET /fitness/summary
+- GET /fitness/chart
+
+### Nutrition (`/nutrition`)
+- POST /nutrition/log
+- GET /nutrition/history
+- GET /nutrition/analysis
+
+### Mental Health (`/mood`)
+- POST /mood/log
+- GET /mood/history
+- GET /mood/trends
+
+### Insights (`/insights`)
+- GET /insights/weekly
+- GET /insights/dashboard
+
+### AI Features (`/ai`)
+- POST /ai/coach
+- POST /ai/analyze-journal
+- POST /ai/speech-to-text
+- POST /ai/smart-recommendations
+- POST /ai/recommend-workout
+- POST /ai/nutrition-advice
+- POST /ai/mental-health-support
+
+### External Integrations
+- MongoDB Atlas
+- Swagger/OpenAPI (/docs)
+- Hugging Face API
 
 ## 📋 Example API Requests
 
@@ -261,6 +322,48 @@ curl -X POST http://localhost:8000/mood/log \
 ```
 
 ---
+## ⚠️ Challenges Faced
+
+- Integration of frontend and backend APIs  
+- Managing asynchronous API calls  
+- Designing a responsive UI  
+- Implementing secure authentication  
+- Handling large datasets  
+- Ensuring smooth module communication  
+
+---
+
+## 👥 Team Contributions
+
+- Aryan Seethesh – Backend (FastAPI, APIs, logic)  
+- Mehul Singh – API Integration (Axios)  
+- Nived Poduval – Database (MongoDB)  
+- Kshipreet Reji – Frontend (React UI)  
+
+---
+
+## 📸 Screenshots
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/66aeea32-173f-4987-979b-a820c48c7996" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/21bde1aa-c524-48b6-aa85-2ee05e109940" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b687eef1-a905-468a-a2a6-c879802d4799" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/225e5dad-d072-47d1-9a9e-adf7b356304f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0e3c5b4-3093-4cbe-893f-e2657193c4e6" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cc8fef19-75b5-4410-87c2-1ce3c36bd4d8" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c9241ab2-118b-45d2-bac6-689a9f8a79b4" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d82be7db-ff7e-40f8-aa99-7058ca9351fa" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0a802403-bf2c-45e2-be54-920b8da4b9c4" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4941c6d0-6132-402a-bd63-975a9b8533d3" />
+
+
+
+
+
+- Login Page  
+- Dashboard  
+- Fitness Tracking  
+- Nutrition Tracking  
+- Mood Tracking  
 
 ##  MongoDB Collections
 
